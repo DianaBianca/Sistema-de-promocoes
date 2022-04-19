@@ -13,7 +13,7 @@ Primeiramente instale o **Ruby 2.7.2** (você pode usar o RVM ou asdf):
 * [RVM](https://rvm.io/)
 * [asdf](https://github.com/asdf-vm/asdf)
 
-Apõs isso, intale o Rails com o seguinte comando em seu **terminal**:
+Após isso, intale o Rails com o seguinte comando em seu **terminal**:
  ```
 gem install rails --version 7.0.2.3
  ```
