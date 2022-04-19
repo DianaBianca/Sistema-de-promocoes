@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <% ProductCategory.all.each do |category| %>
+        <div class="card card-index text-box-index" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= category.name %></h5>
+            <p class="card-text">Código:</p>
+            <p class="card-text"><%= category.code %></p>
+            <%= link_to "Excluir", product_category_path(category), data: { 'turbo-method': :delete, 'turbo-confirm': 'Are you sure?' } , class:"btn btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>

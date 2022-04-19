@@ -1,0 +1,54 @@
+<div class="promotion-form container">
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :name, 'Nome', class:"form-label" %>
+        <%= promotion.text_field :name, class:"form-control", placeholder: "Nome" %>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :description, 'Descrição', class:"form-label" %>
+        <%= promotion.text_field :description, class:"form-control", placeholder: "Descrição" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :code, 'Código', class:"form-label" %>
+        <%= promotion.text_field :code, class:"form-control", placeholder: "Código" %>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :discount_rate, 'Desconto', class:"form-label" %>
+        <%= promotion.number_field :discount_rate, class:"form-control", placeholder: "Desconto" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :coupon_quantity, 'Quantidade de cupons', class:"form-label" %>
+        <%= promotion.number_field :coupon_quantity, min: 0, step: 1, class:"form-control", placeholder: "Quantidade de cupons" %>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :expiration_date, 'Data de expiração', class:"form-label" %>
+        <%= promotion.date_field :expiration_date, class:"form-control", placeholder: "Data de expiração" %>
+      </div>
+    </div>
+  </div>
+
+  <b>Escolha uma categoria:</b>
+
+  <div class="form-check ">
+    <%= promotion.collection_check_boxes :product_category_ids, ProductCategory.all, :id, :name, type:"radio" %>
+  </div>
+</div>

@@ -1,0 +1,1078 @@
+{
+  "id": "4da7000f-7e61-4ca3-bbc1-5fc7884dfe82",
+  "version": "2.0",
+  "name": "promotion_system_test",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "fb6255d6-914f-4563-b306-3f7664fcbea8",
+    "name": "1. criar_promoção",
+    "commands": [{
+      "id": "cc2ef92e-75d8-4734-bab7-15a4830a77a1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe6ea35d-c815-4daa-b48b-3d75557bb2a3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1233x856",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d45aa9e-6ae9-4d43-83f5-897b12a14f16",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Criar Promoção",
+      "targets": [
+        ["linkText=Criar Promoção", "linkText"],
+        ["css=.btn-outline-light", "css:finder"],
+        ["xpath=//a[contains(text(),'Criar Promoção')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/promotions/new')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Criar Promoção')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70ff2543-a559-4e4a-8c88-236f77dffaea",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_name",
+      "targets": [
+        ["id=promotion_name", "id"],
+        ["name=promotion[name]", "name"],
+        ["css=#promotion_name", "css:finder"],
+        ["xpath=//input[@id='promotion_name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a464f47-9db9-4dda-9222-176ed246e66a",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_name",
+      "targets": [
+        ["id=promotion_name", "id"],
+        ["name=promotion[name]", "name"],
+        ["css=#promotion_name", "css:finder"],
+        ["xpath=//input[@id='promotion_name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Geek Day"
+    }, {
+      "id": "93dddcbb-5e7f-46be-b8fc-eca9a04997d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_description",
+      "targets": [
+        ["id=promotion_description", "id"],
+        ["name=promotion[description]", "name"],
+        ["css=#promotion_description", "css:finder"],
+        ["xpath=//input[@id='promotion_description']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48e8b94a-ea41-4849-bdd8-2ed225dde0d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_description",
+      "targets": [
+        ["id=promotion_description", "id"],
+        ["name=promotion[description]", "name"],
+        ["css=#promotion_description", "css:finder"],
+        ["xpath=//input[@id='promotion_description']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Promoção do dia geek, 10% de desconto"
+    }, {
+      "id": "0fff2bcb-ea25-4dc3-b995-c6829b6cdf2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_code",
+      "targets": [
+        ["id=promotion_code", "id"],
+        ["name=promotion[code]", "name"],
+        ["css=#promotion_code", "css:finder"],
+        ["xpath=//input[@id='promotion_code']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2a36581-c2b0-477a-92a7-529c93760f46",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_code",
+      "targets": [
+        ["id=promotion_code", "id"],
+        ["name=promotion[code]", "name"],
+        ["css=#promotion_code", "css:finder"],
+        ["xpath=//input[@id='promotion_code']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "GEEK10"
+    }, {
+      "id": "1e3325b0-2eb6-4980-aca5-443d64a2a79c",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_discount_rate",
+      "targets": [
+        ["id=promotion_discount_rate", "id"],
+        ["name=promotion[discount_rate]", "name"],
+        ["css=#promotion_discount_rate", "css:finder"],
+        ["xpath=//input[@id='promotion_discount_rate']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58555494-7d8f-4513-b962-680fe5a532c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_discount_rate",
+      "targets": [
+        ["id=promotion_discount_rate", "id"],
+        ["name=promotion[discount_rate]", "name"],
+        ["css=#promotion_discount_rate", "css:finder"],
+        ["xpath=//input[@id='promotion_discount_rate']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "1b2f8a1d-9437-4498-be18-198bef0b38ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_coupon_quantity",
+      "targets": [
+        ["id=promotion_coupon_quantity", "id"],
+        ["name=promotion[coupon_quantity]", "name"],
+        ["css=#promotion_coupon_quantity", "css:finder"],
+        ["xpath=//input[@id='promotion_coupon_quantity']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e47b57-808f-4184-b662-079ec33e9b90",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_coupon_quantity",
+      "targets": [
+        ["id=promotion_coupon_quantity", "id"],
+        ["name=promotion[coupon_quantity]", "name"],
+        ["css=#promotion_coupon_quantity", "css:finder"],
+        ["xpath=//input[@id='promotion_coupon_quantity']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "d7482fa2-91db-4cfc-b697-1167773a2b53",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_expiration_date",
+      "targets": [
+        ["id=promotion_expiration_date", "id"],
+        ["name=promotion[expiration_date]", "name"],
+        ["css=#promotion_expiration_date", "css:finder"],
+        ["xpath=//input[@id='promotion_expiration_date']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab91d367-7698-4000-b545-c9effbb0e9bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_expiration_date",
+      "targets": [
+        ["id=promotion_expiration_date", "id"],
+        ["name=promotion[expiration_date]", "name"],
+        ["css=#promotion_expiration_date", "css:finder"],
+        ["xpath=//input[@id='promotion_expiration_date']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2022-04-20"
+    }, {
+      "id": "52022253-da4b-4f79-839d-30939af7540a",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_product_category_ids_2",
+      "targets": [
+        ["id=promotion_product_category_ids_2", "id"],
+        ["css=#promotion_product_category_ids_2", "css:finder"],
+        ["xpath=//input[@id='promotion_product_category_ids_2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9c626bf-654c-4317-b93c-865fac4ffa54",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2360461c-f7bc-4aed-957b-034a55e7f7be",
+    "name": "1.1 emitir_cupons",
+    "commands": [{
+      "id": "2186b302-731f-4b64-978e-2ef9e4d24c54",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf2e3906-ab32-44e4-a89b-fa63e1fb51ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1233x856",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74637179-dacc-4b74-97aa-5b9e2401344f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Promoções",
+      "targets": [
+        ["linkText=Promoções", "linkText"],
+        ["css=.nav > li:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Promoções')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/promotions')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba19b0ed-b274-4635-99a2-da2ca3a21583",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(9) .btn",
+      "targets": [
+        ["css=.card:nth-child(9) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Geek Day')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/promotions/11')])[2]", "xpath:href"],
+        ["xpath=//div[9]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbb2ed8a-61dc-45b7-88ad-d33e56bf44a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Emitir cupons",
+      "targets": [
+        ["linkText=Emitir cupons", "linkText"],
+        ["css=.col-md-8", "css:finder"],
+        ["xpath=//a[contains(text(),'Emitir cupons')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/promotions/11/generate_coupons')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Emitir cupons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f68a98e1-b563-4e4c-9122-c0c1a2d7edd6",
+    "name": "1.2 desativar cupom",
+    "commands": [{
+      "id": "e11bf7e2-43ee-4491-93f3-a9c30f8601a8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7989c276-383b-4cbf-b62a-670a1a93cf23",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7cc8bca-874c-40b3-be2d-701e56e44495",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Promoções",
+      "targets": [
+        ["linkText=Promoções", "linkText"],
+        ["css=.nav > li:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Promoções')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/promotions')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4cb40ce-fbf2-4a2e-86b7-4ff9ad567ec1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(9) .btn",
+      "targets": [
+        ["css=.card:nth-child(9) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Geek Day')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/promotions/11')])[2]", "xpath:href"],
+        ["xpath=//div[9]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25752354-88a4-4736-8ca7-09aee70aac4e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desativar cupom",
+      "targets": [
+        ["linkText=Desativar cupom", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Desativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/27/inactivate')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9ea2535-43ac-4371-bd0e-3ff9c34f524e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desativar cupom",
+      "targets": [
+        ["linkText=Desativar cupom", "linkText"],
+        ["css=tr:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Desativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/28/inactivate')]", "xpath:href"],
+        ["xpath=//tr[3]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce63443e-0b44-4ecf-8224-c23060fae00e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desativar cupom",
+      "targets": [
+        ["linkText=Desativar cupom", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Desativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/29/inactivate')]", "xpath:href"],
+        ["xpath=//tr[4]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2be83513-bdf8-4e80-8162-5355dcb2e43b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desativar cupom",
+      "targets": [
+        ["linkText=Desativar cupom", "linkText"],
+        ["css=tr:nth-child(5) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Desativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/30/inactivate')]", "xpath:href"],
+        ["xpath=//tr[5]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c00097f3-415d-465d-b3cf-b25f5d372600",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desativar cupom",
+      "targets": [
+        ["linkText=Desativar cupom", "linkText"],
+        ["css=tr:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Desativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/31/inactivate')]", "xpath:href"],
+        ["xpath=//tr[6]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d338ff9-ea52-40ea-a2d6-2eeb4ef638c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4) .card-body",
+      "targets": [
+        ["css=.col:nth-child(4) .card-body", "css:finder"],
+        ["xpath=//div[4]/div/div", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "83a5a75b-944d-4d93-b17d-1ca72107282e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reativar cupom",
+      "targets": [
+        ["linkText=Reativar cupom", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Reativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/27/activate')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ead52c98-d209-4226-9766-5ac9bee6b277",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tr[3]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'Reativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb630f16-8198-449b-9261-b243f1c0e34b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reativar cupom",
+      "targets": [
+        ["linkText=Reativar cupom", "linkText"],
+        ["css=tr:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Reativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/28/activate')]", "xpath:href"],
+        ["xpath=//tr[3]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "886f9cd6-df01-4e05-9c70-102303e58c70",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reativar cupom",
+      "targets": [
+        ["linkText=Reativar cupom", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Reativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/29/activate')]", "xpath:href"],
+        ["xpath=//tr[4]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c59f243c-f0ed-47e9-988a-9b426988cb77",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reativar cupom",
+      "targets": [
+        ["linkText=Reativar cupom", "linkText"],
+        ["css=tr:nth-child(5) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Reativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/30/activate')]", "xpath:href"],
+        ["xpath=//tr[5]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72d7427d-ab06-4a23-9479-b821f2aa5948",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reativar cupom",
+      "targets": [
+        ["linkText=Reativar cupom", "linkText"],
+        ["css=tr:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Reativar cupom')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/coupons/31/activate')]", "xpath:href"],
+        ["xpath=//tr[6]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reativar cupom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "463a6604-4840-44b4-8a23-821e330ad381",
+    "name": "1.3 excluir_promoção",
+    "commands": [{
+      "id": "303075d6-ef61-43a1-88aa-faa2a2a3099e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/promotions",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22df73c5-2d96-49e3-b9f8-e2496414342a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "621ee88a-ecd0-415a-bb89-ae6e0cf5277e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar uma promoção",
+      "targets": [
+        ["linkText=Registrar uma promoção", "linkText"],
+        ["css=.btn-botton:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar uma promoção')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/promotions/new')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar uma promoção')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "232b4a37-4881-4037-bb62-40deab810877",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_name",
+      "targets": [
+        ["id=promotion_name", "id"],
+        ["name=promotion[name]", "name"],
+        ["css=#promotion_name", "css:finder"],
+        ["xpath=//input[@id='promotion_name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "658aa048-e248-4fc8-b9f8-0ab178132fcc",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_name",
+      "targets": [
+        ["id=promotion_name", "id"],
+        ["name=promotion[name]", "name"],
+        ["css=#promotion_name", "css:finder"],
+        ["xpath=//input[@id='promotion_name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "teste"
+    }, {
+      "id": "3275f883-eb42-4364-9782-7b84f077285b",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_description",
+      "targets": [
+        ["id=promotion_description", "id"],
+        ["name=promotion[description]", "name"],
+        ["css=#promotion_description", "css:finder"],
+        ["xpath=//input[@id='promotion_description']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca3011a-60f7-4198-8c14-b2296bfb9c3c",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_description",
+      "targets": [
+        ["id=promotion_description", "id"],
+        ["name=promotion[description]", "name"],
+        ["css=#promotion_description", "css:finder"],
+        ["xpath=//input[@id='promotion_description']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "isso é um teste"
+    }, {
+      "id": "03f9c33c-30e8-4061-bdcf-e5ed002e9564",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_code",
+      "targets": [
+        ["id=promotion_code", "id"],
+        ["name=promotion[code]", "name"],
+        ["css=#promotion_code", "css:finder"],
+        ["xpath=//input[@id='promotion_code']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "730971a9-b7f2-43a6-8ae5-5eed60e9cbfd",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_code",
+      "targets": [
+        ["id=promotion_code", "id"],
+        ["name=promotion[code]", "name"],
+        ["css=#promotion_code", "css:finder"],
+        ["xpath=//input[@id='promotion_code']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "TEST"
+    }, {
+      "id": "60e8616b-ab78-4025-ad27-d412df7e1bcd",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_discount_rate",
+      "targets": [
+        ["id=promotion_discount_rate", "id"],
+        ["name=promotion[discount_rate]", "name"],
+        ["css=#promotion_discount_rate", "css:finder"],
+        ["xpath=//input[@id='promotion_discount_rate']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "444a5984-4f4e-4e11-aad8-885268f580d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_discount_rate",
+      "targets": [
+        ["id=promotion_discount_rate", "id"],
+        ["name=promotion[discount_rate]", "name"],
+        ["css=#promotion_discount_rate", "css:finder"],
+        ["xpath=//input[@id='promotion_discount_rate']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "12608919-3cab-4004-80b2-5bb32fab912c",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_coupon_quantity",
+      "targets": [
+        ["id=promotion_coupon_quantity", "id"],
+        ["name=promotion[coupon_quantity]", "name"],
+        ["css=#promotion_coupon_quantity", "css:finder"],
+        ["xpath=//input[@id='promotion_coupon_quantity']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57fb404c-338d-47bd-a44b-ab1e6243b63b",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_coupon_quantity",
+      "targets": [
+        ["id=promotion_coupon_quantity", "id"],
+        ["name=promotion[coupon_quantity]", "name"],
+        ["css=#promotion_coupon_quantity", "css:finder"],
+        ["xpath=//input[@id='promotion_coupon_quantity']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "a00a3e44-cf7f-4483-a647-53b662d7b3ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_expiration_date",
+      "targets": [
+        ["id=promotion_expiration_date", "id"],
+        ["name=promotion[expiration_date]", "name"],
+        ["css=#promotion_expiration_date", "css:finder"],
+        ["xpath=//input[@id='promotion_expiration_date']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73549717-52d4-40de-940d-65dde5b9a4a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=promotion_expiration_date",
+      "targets": [
+        ["id=promotion_expiration_date", "id"],
+        ["name=promotion[expiration_date]", "name"],
+        ["css=#promotion_expiration_date", "css:finder"],
+        ["xpath=//input[@id='promotion_expiration_date']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2022-04-20"
+    }, {
+      "id": "eee56b9a-c96f-4735-bc10-8f810f2a30a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=promotion_product_category_ids_2",
+      "targets": [
+        ["id=promotion_product_category_ids_2", "id"],
+        ["css=#promotion_product_category_ids_2", "css:finder"],
+        ["xpath=//input[@id='promotion_product_category_ids_2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a875e8b-baea-4376-ad82-f17814698cb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a73b70c2-1a07-46ed-9e6d-69fb3213fc78",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voltar",
+      "targets": [
+        ["linkText=Voltar", "linkText"],
+        ["css=.btn-botton:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Voltar')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/promotions')])[4]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e212754-c9a2-4f14-ad23-22b241512bbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(9) > .card-body",
+      "targets": [
+        ["css=.card:nth-child(9) > .card-body", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3138ea0-d63a-4ebb-b40f-30d5a6e4426d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(9) .btn",
+      "targets": [
+        ["css=.card:nth-child(9) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'teste')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/promotions/12')])[2]", "xpath:href"],
+        ["xpath=//div[9]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87c2b734-3c8c-4de8-8009-57ad109db758",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17f263b3-a927-423f-8746-a8f2da9f74f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Excluir",
+      "targets": [
+        ["linkText=Excluir", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/promotions/12')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a642551-9eb2-4f59-9f9a-b5f962e0b33f",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49a622f8-9b7b-495e-8068-eb073122b21c",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3178b657-7259-44ac-bb5b-23f157ab2f79",
+    "name": "1.4 pesquisar_promocao_por_cupom",
+    "commands": [{
+      "id": "809e8457-fb9b-4cbf-b551-9961841b400e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4846133-6f2b-420e-b4fc-d49335289c3c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abc7d0c4-501c-49d8-a48d-531b9d977fee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Promoções",
+      "targets": [
+        ["linkText=Promoções", "linkText"],
+        ["css=.nav > li:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Promoções')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/promotions')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3625995e-ac93-428f-b9d0-596f4e8dd714",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .btn",
+      "targets": [
+        ["css=.card:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'pascoa')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/promotions/2')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d45b0360-2f93-4c16-92a1-897134f295c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(1)", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'PASCOAA-0001')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca5d7658-92b7-45c1-9a72-e100fbc4d7ae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voltar",
+      "targets": [
+        ["linkText=Voltar", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Voltar')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/promotions')])[3]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a273c83f-b452-4277-9f54-60ae297d0c41",
+      "comment": "",
+      "command": "click",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a7b87c2-3da0-4817-96cf-d64215c2a13c",
+      "comment": "",
+      "command": "click",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14116a57-56df-4a60-96c5-2f8f90e38d5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "PASCOAA-0001"
+    }, {
+      "id": "07222d16-7ff0-428e-a205-d3701949edf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Este cupom npertence a esta promoção')]", "xpath:innerText"]
+      ],
+      "value": "Este cupom pertence a esta promoção"
+    }]
+  }, {
+    "id": "6d63b5a0-2c22-436f-8d28-3d1ef357b64d",
+    "name": "1.5 nao_encontra_promocao",
+    "commands": [{
+      "id": "0b2cb6f1-e570-4fb1-ab36-564f238dff90",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "add12814-0cae-4e61-a7ce-3d2153a0b149",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a89d6caa-e48f-4a1a-8c10-060f396ff993",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Promoções",
+      "targets": [
+        ["linkText=Promoções", "linkText"],
+        ["css=.nav > li:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Promoções')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/promotions')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2bf3e6-6cc6-45e2-9177-cc48706ce11f",
+      "comment": "",
+      "command": "click",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b71fee49-4526-4c39-94f3-38fdfe854ba9",
+      "comment": "",
+      "command": "type",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "TESTE-0000"
+    }, {
+      "id": "ae7dbc4a-23d0-4766-8734-501018df9380",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.form-outline > .btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91b69996-c334-4b22-b380-378b82a7877b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Este cupom não existe')]", "xpath:innerText"]
+      ],
+      "value": "Este cupom não existe"
+    }]
+  }, {
+    "id": "639dcdad-73f7-47be-8cec-09613921fbff",
+    "name": "2. criar_categoria",
+    "commands": [{
+      "id": "03f46569-499a-4e18-88aa-4d261279383c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d126bff-e2ec-4045-b441-4f3bf0cb0c4c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e304a6ae-3e68-441e-9035-163731e28be2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Criar uma Categoria",
+      "targets": [
+        ["linkText=Criar uma Categoria", "linkText"],
+        ["css=.btn-outline-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Criar uma Categoria')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/product_categories/new')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Criar uma Categoria')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a01729c8-3004-42b5-8b99-699a801be309",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_category_name",
+      "targets": [
+        ["id=product_category_name", "id"],
+        ["name=product_category[name]", "name"],
+        ["css=#product_category_name", "css:finder"],
+        ["xpath=//input[@id='product_category_name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3fbc917-440c-4ceb-a240-e11b5e90c1e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=product_category_name",
+      "targets": [
+        ["id=product_category_name", "id"],
+        ["name=product_category[name]", "name"],
+        ["css=#product_category_name", "css:finder"],
+        ["xpath=//input[@id='product_category_name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Alimentos"
+    }, {
+      "id": "e1a210cf-75e4-4e15-9f85-b4f8d0c91627",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_category_code",
+      "targets": [
+        ["id=product_category_code", "id"],
+        ["name=product_category[code]", "name"],
+        ["css=#product_category_code", "css:finder"],
+        ["xpath=//input[@id='product_category_code']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5843fa11-8c69-4b14-ba97-f0aa552a9ec9",
+      "comment": "",
+      "command": "type",
+      "target": "id=product_category_code",
+      "targets": [
+        ["id=product_category_code", "id"],
+        ["name=product_category[code]", "name"],
+        ["css=#product_category_code", "css:finder"],
+        ["xpath=//input[@id='product_category_code']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "FOOD"
+    }, {
+      "id": "8feb4f52-5b8f-4ca7-874a-dd453ad1b3f5",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a270b3d1-41c0-466e-931e-e26c12a181cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .card-text:nth-child(3)",
+      "targets": [
+        ["css=.card:nth-child(2) .card-text:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'FOOD')]", "xpath:innerText"]
+      ],
+      "value": "FOOD"
+    }]
+  }],
+  "suites": [{
+    "id": "811561e9-ad3c-47a5-a357-ac5257ec80f7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/", "http://localhost:3000/user/sign_up"],
+  "plugins": []
+}

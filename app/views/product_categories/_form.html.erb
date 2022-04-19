@@ -1,0 +1,16 @@
+<div class="promotion-form container">
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :name, 'Nome', class:"form-label" %>
+        <%= promotion.text_field :name, class:"form-control", placeholder: "Nome da categoria" %>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <%= promotion.label :code, 'Código', class:"form-label" %>
+        <%= promotion.text_field :code, class:"form-control", placeholder: "EX: TECH" %>
+      </div>
+    </div>
+  </div>
+</div>

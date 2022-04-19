@@ -1,0 +1,12 @@
+<%= render partial: 'cards_categories_index' %>
+
+<% if ProductCategory.all.empty? %>
+  <div class="promotion-header">
+    <h1>Nenhuma categoria cadastrada</h1>
+  </div>
+<% end %>
+
+<div class="buttons-botton">
+  <%= link_to "Voltar", root_path, class:"btn btn-botton btn-primary" %>
+  <%= link_to "Criar Categoria", new_product_category_path, class:"btn btn-botton btn-primary" %>
+</div>

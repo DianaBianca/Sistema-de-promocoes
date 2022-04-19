@@ -1,0 +1,35 @@
+<% if @promotion.coupons.empty? %>
+  <div class="btn-generate-coupons">
+  <%= link_to "Emitir cupons", generate_coupons_promotion_path(@promotion), data: { 'turbo-method': :post },  class:"btn   btn-primary col-md-8" %>
+  </div>
+<% else %>
+<div class="table-container">
+  <table class="table ">
+    <thead>
+      <h1 class="promotion-header">Cupons Gerados</h1>
+    </thead>
+    <tbody><br>
+    <tr>
+      <th><%= t('activerecord.attributes.coupon.code') %></th>
+      <th>Status</th>
+    </tr>
+    <% @promotion.coupons.each do |coupon| %>
+      <tr>
+        <td>
+          <%= coupon.code %>
+        </td>
+        <td>
+          <%= coupon.status %>
+        </td>
+        <td>
+        <% if coupon.status.eql? "active" %>
+          <%= link_to 'Desativar cupom', inactivate_coupon_path(coupon), data: { 'turbo-method': :post } %>
+        <% else %>
+          <%= link_to 'Reativar cupom', activate_coupon_path(coupon), data: { 'turbo-method': :post } %>
+        <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+<% end %>

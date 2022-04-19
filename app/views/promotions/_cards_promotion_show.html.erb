@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-box">
+          <h5 class="card-title">Desconto</h5>
+          <h6 class="card-subtitle mb-2 text-muted">em porcentagem</h6>
+          <p class="card-text"><%= number_to_percentage @promotion.discount_rate, precision: 2, separator: ',' %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-box">
+          <h5 class="card-title">Código</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Início do cupom</h6>
+          <p class="card-text"><%= @promotion.code %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+     <div class="card" style="width: 18rem;">
+        <div class="card-body text-box">
+          <h5 class="card-title">Data de expiração</h5>
+          <h6 class="card-subtitle mb-2 text-muted">encerra a validade dos cupons</h6>
+          <p class="card-text"><%= @promotion.expiration_date.strftime('%d/%m/%Y') %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+          <div class="card-body text-box">
+            <h5 class="card-title">Cupons</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Ativos</h6>
+            <p class="card-text"><%= @promotion.coupons.where(status: "active").count %></p>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>

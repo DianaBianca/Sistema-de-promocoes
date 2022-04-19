@@ -1,0 +1,14 @@
+<% if @promotion.errors.any? %>
+  <ul>
+    <% @promotion.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with model: @promotion do |promotion|%>
+  <%= render partial: 'form', locals: { promotion: promotion } %>
+  <div class="buttons-botton">
+    <%= promotion.submit 'Concluir', class: "ls-btn" %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <% Promotion.all.each do |promotion| %>
+        <div class="card card-index text-box-index" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to promotion.name, promotion_path(promotion) , class:"card-name"%></h5>
+            <p class="card-text"><%= promotion.description %></p>
+            <p class="card-text">
+              <%= t('activerecord.attributes.discount_rate') %>
+              <%= number_to_percentage promotion.discount_rate, precision: 2 %>
+            </p>
+            <%= link_to promotion.name, promotion_path(promotion), class:"btn btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="promotion-header">
+  <h1><%= t('activerecord.promotions.index.header') %></h1>
+</div>
+
+<%= render partial: 'search_field_index_promotions' %>
+
+<%= render partial: 'cards_promotion_index' %>
+
+<% if Promotion.all.empty? %>
+  <div class="promotion-header">
+    <h1>Nenhuma promoção cadastrada</h1>
+  </div>
+<% end %>
+
+<div class="buttons-botton">
+  <%= link_to "Voltar", root_path, class:"btn btn-botton btn-primary" %>
+  <%= link_to "Registrar uma promoção", new_promotion_path, class:"btn btn-botton btn-primary" %>
+</div>

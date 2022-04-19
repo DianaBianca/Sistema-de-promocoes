@@ -1,0 +1,21 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      promotion: #refente ao numero de model em si
+        one: 'Promoção'
+        other: 'Promoções'
+    attributes: #campos do model
+      promotion:
+        name: 'Nome'
+        code: 'Código'
+        discount_rate: 'Desconto'
+        coupon_quantity: 'Quantidade de cupons'
+        expiration_date: 'Data de término'
+        description: 'Descrição'
+    promotions:
+      index:
+        header: 'Lista de Promoções'
+      show:
+        inactivate: 'Desativar cupom'
+        activate: 'Reativar cupom'

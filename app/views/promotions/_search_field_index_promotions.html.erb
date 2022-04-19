@@ -1,0 +1,9 @@
+<div class="input-group search-field">
+  <%= form_tag details_coupon_path, method: :get do %>
+    <div class="form-outline">
+      <%= text_field_tag :coupon_code  %>
+      <%= submit_tag "Buscar", class:"btn btn-primary" %>
+      <div>Código do Cupom + numero (ex: AMO-0001)</div>
+    </div>
+  <%end%>
+</div>

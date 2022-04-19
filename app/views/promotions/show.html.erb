@@ -1,0 +1,13 @@
+<div class="promotion-header">
+  <h1><%= @promotion.name %></h1>
+  <p><%= @promotion.description %></p>
+</div>
+
+<%= render partial: 'cards_promotion_show' %>
+<%= render partial: 'coupons_table' %>
+
+<div class="buttons-botton">
+<%= link_to "Voltar", promotions_path, class:"btn btn-botton btn-primary" %>
+<%= link_to "Excluir", destroy_promotion_path(@promotion), data: { 'turbo-method': :delete, 'turbo-confirm': 'Are you sure?' } , class:"btn btn-botton btn-danger" %>
+<%= link_to "Editar promoção", edit_promotion_path(@promotion), class:"btn btn-botton btn-warning" %>
+</div>

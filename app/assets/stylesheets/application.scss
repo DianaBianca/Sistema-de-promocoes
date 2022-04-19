@@ -1,0 +1,211 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+ @import "bootstrap";
+
+
+/*--------Login Form--------*/
+
+a {
+  text-decoration: none;
+}
+.registration-form{
+padding: 50px 0;
+}
+
+.registration-form form{
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+text-align: center;
+  background-color: #5891ff;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 100px;
+}
+
+.registration-form .item{
+border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.registration-form .create-account{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.create-account{
+  width: 100%;
+}
+
+.registration-form .social-media{
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9fadca;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons{
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.registration-form .social-icons a{
+  font-size: 23px;
+  margin: 0 3px;
+  color: #5691ff;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 45px;
+}
+
+.registration-form .social-icons a:hover{
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.btn-login{
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5792ffd8;
+  border: none;
+  color: white;
+  margin-top: 20px
+}
+
+.header-form{
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #3a4a6b;
+}
+
+@media (max-width: 576px) {
+  .registration-form form{
+      padding: 50px 20px;
+  }
+
+  .registration-form .form-icon{
+      width: 70px;
+      height: 70px;
+      font-size: 30px;
+      line-height: 70px;
+  }
+}
+
+
+
+/*Promotion view*/
+
+.text-box {
+  text-align: center;
+  font-size: 38px;
+}
+
+.promotion-header{
+  margin: auto;
+  text-align: center;
+  padding: 2% 0%;
+}
+
+.table-container{
+  padding: 0% 3%;
+}
+
+.table{
+  border:rgba(207, 207, 207, 0.562) !important;
+}
+
+.buttons-botton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-botton{
+  margin-top: 2%;
+  margin-right: 1%;
+}
+
+.btn-generate-coupons{
+  margin-top: 1%;
+  display: flex !important;
+  align-content: center !important;
+  justify-content: center;
+}
+
+/*Promotion index*/
+
+.card-index{
+  margin: 1%;
+}
+
+.text-box-index{
+  text-align: center;
+  background-color: #5890ff21;
+}
+
+.search-field{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-search{
+  height: 20px;
+  text-align: center;
+}
+/*Navbar*/
+
+.email-text{
+  margin: auto;
+}
+
+.test{
+  border:10px solid red !important ;
+}

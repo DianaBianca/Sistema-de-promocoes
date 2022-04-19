@@ -1,0 +1,18 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      coupon:
+        one: 'Cupon'
+        other: 'Cupons'
+    attributes:
+      coupon:
+        code: 'Código'
+      coupon/status:   #model e tributo
+        active: 'disponível'
+        inactive: 'indisponível'
+  coupons:
+      inactivate:
+        success: 'Cupom cancelado com sucesso'
+      activate:
+        success: 'Cupom reativado com sucesso'

@@ -1,0 +1,28 @@
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Sistema de Promoções</h1>
+    <p class="col-md-8 fs-4">
+      Crie promoções e gere cupons quando quiser para seus clientes comprarem com desconto na sua lojinha online.
+    </p>
+  </div>
+</div>
+
+<div class="row align-items-md-stretch">
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-white bg-primary rounded-3">
+      <h2>Criar Promoções</h2>
+      <p>
+        É facil e rápdo, crie promoções em segundos sem se preocupar,
+        aqui tudo foi feito para você gastar menos tempo possivel com burocracias e mais tempo vendendo"
+      </p>
+      <%= link_to "Criar Promoção", new_promotion_path, class:"btn btn-outline-light" %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="h-100 p-5 bg-light border rounded-3">
+      <h2>Crie categorias de promoção</h2>
+      <p>Para facilitar a organização de suas promoções, crie categorias, assim ao pesquisar uma promoção, você pode filtrá-la por uma categoria específica</p>
+      <%= link_to "Criar uma Categoria", new_product_category_path, class:"btn btn-outline-primary" %>
+    </div>
+  </div>
+</div>

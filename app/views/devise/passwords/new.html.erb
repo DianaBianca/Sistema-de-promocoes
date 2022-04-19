@@ -1,0 +1,25 @@
+<div class="registration-form">
+
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <h4 class="header-form">Esqueceu sua senha?</h4>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control item", placeholder: "Digite seu E-mail" %>
+      </div>
+    </div>
+
+    <div class="form-group actions">
+      <div class="actions">
+        <%= f.submit "Send me reset password instructions", class:"btn btn-block create-account" %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="social-media">
+    <%= link_to "Voltar", new_user_session_path %>
+  </div>
+</div>

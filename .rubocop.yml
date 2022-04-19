@@ -1,0 +1,29 @@
+require: rubocop-rails
+
+Metrics/LineLength:
+  Max: 150
+Metrics/ClassLength:
+  Max: 150
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 18
+
+Style/Documentation:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+AllCops:
+  SuggestExtensions: false
+  TargetRubyVersion: 2.6
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*.rb'
+    - 'config/**/*.rb'
+    - 'spec/**/*_spec.rb'
+    - 'spec/factories/*.rb'
+    - '**/vendor/**/*'

@@ -1,0 +1,14 @@
+<% if @product_category.errors.any? %>
+  <ul>
+    <% @product_category.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+<%= form_with model: @product_category do |product_category| %>
+  <%= render partial: 'form', locals: { promotion: product_category } %>
+  <div class="buttons-botton">
+    <%= product_category.submit 'Criar Categoria', class:"btn btn-botton btn-primary" %>
+    <%= link_to 'Voltar', product_categories_path, class:"btn btn-botton btn-primary" %>
+  </div>
+<% end %>
